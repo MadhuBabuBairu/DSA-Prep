@@ -8,7 +8,7 @@ public:
         int n=nums.size();
         set<vector<int> >tripletSet;
         for(int i=0;i<n;i++){
-            set<int> hashset;//as i changes hashset is fresh
+            set<int> hashset;//as i changes hashset is fresh also , we are storing element b/w these pointers
             for(int j=i+1;j<n;j++){
                 int third = -(nums[i]+nums[j]);
                 //Check if the third is present in hashmpp 
