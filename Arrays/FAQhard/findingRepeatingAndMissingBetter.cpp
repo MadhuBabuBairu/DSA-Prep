@@ -6,7 +6,7 @@ public:
     vector<int> findMissingRepeatingNumbers(vector<int> nums) {
         //Better by reducing TC 0(n*2) using hasing
         int n = nums.size();
-        int hash[n+1] = {0};
+        int hash[8] = {0};
         int repeating = -1, missing = -1;
 
         for(int i=0;i<n;i++){
