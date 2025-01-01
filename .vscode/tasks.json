@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",           // Enable C++11 standard
+                "${file}",             // Current file
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}" // Output file in the same directory
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiles and runs the active C++ file using C++11."
+        }
+    ]
+}
