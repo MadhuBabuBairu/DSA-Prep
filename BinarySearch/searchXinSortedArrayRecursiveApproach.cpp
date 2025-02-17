@@ -8,9 +8,9 @@ private:
         int mid = low + (high - low)/2;
         if(nums[mid] == target) return mid;
         else if(nums[mid] < target){
-            return found(nums,mid+1,high,target);// goo left
+            return found(nums,mid+1,high,target);// goo right
         }
-        else return found(nums,low,mid - 1,target);// goo right
+        else return found(nums,low,mid - 1,target);// goo left
     }
 public:
     int search(vector<int> &nums, int target){
