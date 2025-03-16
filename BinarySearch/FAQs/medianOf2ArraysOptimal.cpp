@@ -11,8 +11,8 @@ public:
      int n = n1 + n2;
      if(n2 > n1) return median(arr2 , arr1);
 
-     int left = (n1 + n2 + 1)/2; //lenght of left half
-     int low = 0 , high = n1; // we are assuming arr1 has least elements
+     int left = (n1 + n2 + 1)/2; //lenght of left half  works with cobination of odd and even no. of elements
+     int low = 0 , high = n1; // we are assuming arr1 has least elements ,
 
      while(low <= high){
         int mid1 = (low + high) >> 1;
