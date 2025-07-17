@@ -9,7 +9,7 @@ public:
         int n = nums.size();
         vector<vector<int> >ans;//to return ans
         for(int i=0;i<n;i++){
-            if(i>0 && nums[i]==nums[i-1]) continue;//After 1st tripplet i points to new element. i.e look back if equal keep moving
+            if(i>0 && nums[i]==nums[i-1]) continue;//if i points to a duplicate ele. continue to next iteration
             // two pointer approvach
             int j = i+1;// i<j<k
             int k = n-1;
